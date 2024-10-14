@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Case 01</title>
+    <style>
+    body {
+        margin: 0;
+        overflow: hidden;
+      }
+      section {
+        width: 350px;
+        height: 80vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        margin: auto;
+      }
+      
+      div {
+        background-color: #ba1be2;
+        width: 340px;
+        height: 70px;
+        left: -280px;
+        position: relative;
+        border-radius: 0 5px 5px 0;
+        display: block;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+        transition-property: left;
+        transition-duration: 3s;
+      }
+      
+      div:hover {
+        left: 0;
+      }
+      
+      img {
+        width: 45px;
+        height: 45px;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        right: 10px;
+        margin: auto;
+      }
+      
+      .box-name {
+        color: white;
+        font-size: 25px;
+        padding: 10px;
+        left: 10px;
+        top: 0;
+        bottom: 0;
+        left: 40px;
+        display: flex;
+        align-items: center;
+        margin: auto;
+      }
+      </style>
+    <link rel="stylesheet" href="/css/case1.css" />
+  </head>
+  <body>
+    <section>
+      <div>
+        <span class="box-name">Menu One</span>
+        <img
+          src="/Images/address-book-solid.svg"
+          alt="contacts-image"
+        />
+      </div>
+
+      <div>
+        <span class="box-name">Menu Two</span>
+        <img
+          src="/Images/bx--bxs-ambulance.svg"
+          alt="ambulance-image"
+        />
+      </div>
+
+      <div>
+        <span class="box-name">Menu Three</span>
+        <img 
+        src="/Images/bx--globe.svg"
+        alt="global-image" 
+        />
+      </div>
+
+      <div>
+        <span class="box-name">Menu Four</span>
+        <img src="/Images/bx--bxs-layer.svg" 
+        alt="layer-image"
+        />
+      </div>
+
+      <div>
+        <span class="box-name">Menu Five</span>
+        <img src="/Images/bx--bxs-cart-download.svg" 
+        alt="cart-image"
+        />
+      </div>
+    </section>
+  </body>
+</html>

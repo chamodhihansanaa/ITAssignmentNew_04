@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Case 02</title>
+    <style>
+        body {
+  margin: 0;
+  background-color: rgb(49, 49, 209);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  width: 350px;
+  background-color: gray;
+  border-radius: 100%;
+  aspect-ratio: 1/1;
+  position: relative;
+}
+
+h1 {
+  width: max-content;
+  height: max-content;
+  color: white;
+  position: absolute;
+  font-size: 35px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.circle:hover {
+  cursor: pointer;
+}
+
+.circle::before {
+  content: "";
+  border: 15px solid white;
+  border-radius: 100%;
+  border-top-color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  animation: none;
+}
+
+.circle:hover::before {
+  animation: aroundTheCircle 3s infinite;
+}
+
+@keyframes aroundTheCircle {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+    </style>
+    <link rel="stylesheet" href="/css/case2.css" />
+  </head>
+  <body>
+    <div class="circle">
+      <h1>RWAD</h1>
+    </div>
+  </body>
+</html>
